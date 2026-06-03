@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하망이의 무료 결혼식 감사카드 만들기 가이드</title>
+    <meta property="og:title" content="무료 결혼식 감사카드 만들기 가이드">
+    <meta property="og:description" content="코딩 없이 30분이면 완성! GitHub Pages로 무료 감사카드를 만드는 방법">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-particles">
+            <div class="particle" style="left:10%;animation-duration:4s;animation-delay:0s;"></div>
+            <div class="particle" style="left:25%;animation-duration:5s;animation-delay:1s;"></div>
+            <div class="particle" style="left:40%;animation-duration:3.5s;animation-delay:2s;"></div>
+            <div class="particle" style="left:55%;animation-duration:4.5s;animation-delay:0.5s;"></div>
+            <div class="particle" style="left:70%;animation-duration:3s;animation-delay:1.5s;"></div>
+            <div class="particle" style="left:85%;animation-duration:5.5s;animation-delay:0.8s;"></div>
+        </div>
+        <h1>💌 결혼식 감사카드 만들기</h1>
+        <p>결혼식에 참석해주신 분들께 감사 인사를 전하는<br>예쁜 웹페이지를 무료로 만들어보세요!</p>
+        <div class="badge">완전 무료 · 코딩 필요 없음 · 30분이면 완성</div>
+    </div>
+
+    <div class="container">
+        <!-- 완성 미리보기 -->
+        <div class="toc">
+            <h2>✨ 완성하면 이런 페이지가 만들어져요!</h2>
+            <div class="preview-box">
+                <a href="https://dongdong39.github.io/wedding-thanks/" target="_blank" class="preview-link">
+                    <img src="sample/hero.jpg" alt="감사카드 미리보기" class="preview-img">
+                    <p>👆 클릭해서 샘플 페이지 보기</p>
+                </a>
+            </div>
+            <div class="feature-list">
+                <div class="feature-item">📸 사진 갤러리 (터치하면 크게 보기, 넘기기)</div>
+                <div class="feature-item">🎬 행진 영상 재생</div>
+                <div class="feature-item">💐 감사 인사말</div>
+                <div class="feature-item">🎵 식순 영상 (펼쳐서 보기)</div>
+                <div class="feature-item">👨‍👩‍👧‍👦 부모님용 별도 페이지</div>
+            </div>
+        </div>
+
+        <!-- 목차 -->
+        <div class="toc">
+            <h2>📋 목차</h2>
+            <ol>
+                <li><a href="#step1">GitHub 회원가입</a></li>
+                <li><a href="#step2">감사카드 파일 다운로드</a></li>
+                <li><a href="#step3">내 사진 준비하기</a></li>
+                <li><a href="#step4">감사 인사말 수정하기</a></li>
+                <li><a href="#step5">영상 준비하기</a></li>
+                <li><a href="#step6">GitHub에 올리기</a></li>
+                <li><a href="#step7">웹페이지 배포하기</a></li>
+                <li><a href="#step8">완성! 링크 공유하기</a></li>
+                <li><a href="#step9">부모님용 페이지 수정하기</a></li>
+                <li><a href="#faq">자주 묻는 질문</a></li>
+            </ol>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="step" id="step1">
+            <div class="step-number">1</div>
+            <h2>GitHub 회원가입</h2>
+            <p>GitHub은 무료 웹페이지를 만들 수 있는 서비스입니다.</p>
+            <ol>
+                <li><a href="https://github.com" target="_blank">github.com</a>에 접속합니다.</li>
+                <li><strong>Sign up</strong> 버튼을 눌러 회원가입합니다.</li>
+                <li>이메일, 비밀번호, 사용자 이름을 입력합니다.</li>
+                <li>이메일 인증을 완료합니다.</li>
+            </ol>
+            <div class="info-box">💡 이미 GitHub 계정이 있다면 이 단계를 건너뛰세요!</div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step" id="step2">
+            <div class="step-number">2</div>
+            <h2>감사카드 파일 다운로드</h2>
+            <p>감사카드 템플릿 파일을 다운로드합니다.</p>
+            <ol>
+                <li>아래 링크를 클릭하여 템플릿을 다운로드합니다.</li>
+            </ol>
+            <a href="https://github.com/dongdong39/wedding-thanks-template" target="_blank" class="download-btn">📥 감사카드 템플릿 다운로드</a>
+            <div class="info-box">💡 녹색 <strong>Code</strong> 버튼 → <strong>Download ZIP</strong>을 클릭하면 됩니다.</div>
+            <h3>파일 구성</h3>
+            <div class="folder-tree">
+                <span class="folder">📁 wedding-thanks-template/</span><br>
+                ├── <span class="file">index.html</span> <span class="comment">← 신랑신부용 감사카드</span><br>
+                ├── <span class="file">parents.html</span> <span class="comment">← 부모님용 감사카드</span><br>
+                ├── <span class="file">styles.css</span> <span class="comment">← 디자인 (수정 불필요)</span><br>
+                └── <span class="folder">📁 images/</span> <span class="comment">← 여기에 사진·영상을 넣어요!</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="file">hero.jpg</span> <span class="comment">← 감사 인사 이미지</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="file">g1.jpg ~ g16.jpg</span> <span class="comment">← 갤러리 사진들</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="file">video1.mp4</span> <span class="comment">← 메인 행진 영상</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;├── <span class="file">video_thumb.jpg</span> <span class="comment">← 영상 썸네일</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;└── <span class="file">v_신랑입장.mp4 등</span> <span class="comment">← 식순 영상들</span>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step" id="step3">
+            <div class="step-number">3</div>
+            <h2>내 사진 준비하기</h2>
+            <p><code>images</code> 폴더에 사진을 교체합니다. <strong>파일 이름을 반드시 맞춰주세요!</strong></p>
+
+            <h3>갤러리 사진 (필수)</h3>
+            <table>
+                <thead><tr><th>파일 이름</th><th>설명</th></tr></thead>
+                <tbody>
+                    <tr><td><code>g1.jpg</code> ~ <code>g16.jpg</code></td><td>갤러리에 표시될 사진들 (4개씩 한 줄)</td></tr>
+                </tbody>
+            </table>
+            <div class="info-box">💡 사진 수를 줄이고 싶다면 <code>index.html</code>에서 해당 <code>&lt;div class="gallery-item"&gt;</code> 줄을 삭제하면 됩니다. 4의 배수로 맞추면 깔끔해요!</div>
+
+            <h3>기타 이미지</h3>
+            <table>
+                <thead><tr><th>파일 이름</th><th>설명</th></tr></thead>
+                <tbody>
+                    <tr><td><code>hero.jpg</code></td><td>감사 인사 섹션에 표시될 사진 (인사하는 모습 추천)</td></tr>
+                    <tr><td><code>video_thumb.jpg</code></td><td>행진 영상 썸네일 (영상 재생 전 보이는 이미지)</td></tr>
+                </tbody>
+            </table>
+
+            <div class="warn-box">⚠️ 파일 이름을 정확히 맞춰주세요! <code>G1.jpg</code>나 <code>g1.png</code>처럼 대소문자나 확장자가 다르면 안 됩니다.</div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step" id="step4">
+            <div class="step-number">4</div>
+            <h2>감사 인사말 수정하기</h2>
+            <p><code>index.html</code> 파일을 메모장이나 텍스트 편집기로 열어 수정합니다.</p>
+
+            <h3>바꿔야 할 부분들</h3>
+
+            <p><strong>1) 상단 커플 이름과 날짜</strong></p>
+            <pre><span class="comment">&lt;!-- 이 부분을 찾아서 수정하세요 --&gt;</span>
+<span class="key">&lt;p class="hero-couple"&gt;</span><span class="string">하망이 · 하망이</span><span class="key">&lt;/p&gt;</span>
+<span class="key">&lt;p class="hero-date"&gt;</span><span class="string">2026. 05. 09</span><span class="key">&lt;/p&gt;</span></pre>
+
+            <p><strong>2) 인사말 본문</strong> — 원하는 내용으로 자유롭게 수정하세요.</p>
+            <pre><span class="key">&lt;div class="greeting-text"&gt;</span>
+  <span class="key">&lt;p&gt;</span><span class="string">저희 두 사람의 새로운 시작을</span><span class="key">&lt;br&gt;</span><span class="string">따뜻한 마음으로 축복해주신</span><span class="key">&lt;br&gt;</span><span class="string">모든 분들께 깊이 감사드립니다.</span><span class="key">&lt;/p&gt;</span>
+  <span class="comment">&lt;!-- 줄바꿈은 &lt;br&gt;을 사용하세요 --&gt;</span>
+  <span class="comment">&lt;!-- 문단 구분은 &lt;div class="greeting-line"&gt;&lt;/div&gt;를 사이에 넣으세요 --&gt;</span>
+<span class="key">&lt;/div&gt;</span></pre>
+
+            <p><strong>3) 서명 (이름, 혼주)</strong></p>
+            <pre><span class="key">&lt;div class="greeting-sign"&gt;</span>
+  <span class="key">&lt;p&gt;</span><span class="string">하망이 · 하망이</span><span class="key">&lt;/p&gt;</span>
+  <span class="key">&lt;p class="greeting-parents"&gt;</span><span class="string">신랑측 아버지 · 어머니</span><span class="key">&lt;/p&gt;</span>
+  <span class="key">&lt;p class="greeting-parents"&gt;</span><span class="string">신부측 아버지 · 어머니</span><span class="key">&lt;/p&gt;</span>
+  <span class="key">&lt;p class="greeting-olim"&gt;</span><span class="string">올림</span><span class="key">&lt;/p&gt;</span>
+<span class="key">&lt;/div&gt;</span></pre>
+
+            <p><strong>4) 페이지 제목 (카카오톡 공유 시 표시)</strong></p>
+            <pre><span class="key">&lt;title&gt;</span><span class="string">하망이🤍하망이 감사카드</span><span class="key">&lt;/title&gt;</span>
+<span class="key">&lt;meta property="og:title" content="</span><span class="string">하망이🤍하망이 감사카드</span><span class="key">"&gt;</span></pre>
+
+            <div class="success-box">✅ 수정할 때 <code>&lt;p&gt;</code>, <code>&lt;/p&gt;</code> 같은 태그는 건드리지 말고 <strong>글자만 바꿔주세요!</strong></div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step" id="step5">
+            <div class="step-number">5</div>
+            <h2>영상 준비하기</h2>
+            <p>결혼식 영상을 <code>images</code> 폴더에 넣습니다.</p>
+
+            <h3>메인 행진 영상</h3>
+            <table>
+                <thead><tr><th>파일 이름</th><th>설명</th></tr></thead>
+                <tbody>
+                    <tr><td><code>video1.mp4</code></td><td>갤러리 아래에 표시되는 메인 영상</td></tr>
+                </tbody>
+            </table>
+
+            <h3>식순 영상 (선택사항)</h3>
+            <p>하단 펼침 영역에 표시됩니다. 필요한 것만 넣으면 됩니다.</p>
+            <table>
+                <thead><tr><th>파일 이름</th><th>설명</th></tr></thead>
+                <tbody>
+                    <tr><td><code>v_신랑혼주입장.mp4</code></td><td>신랑혼주 입장 영상</td></tr>
+                    <tr><td><code>v_신부혼주입장.mp4</code></td><td>신부혼주 입장 영상</td></tr>
+                    <tr><td><code>v_신랑입장.mp4</code></td><td>신랑 입장 영상</td></tr>
+                    <tr><td><code>v_신부등장.mp4</code></td><td>신부 등장 영상</td></tr>
+                    <tr><td><code>v_신부입장.mp4</code></td><td>신부 입장 영상</td></tr>
+                    <tr><td><code>v_혼인서약서.mp4</code></td><td>혼인서약서 영상</td></tr>
+                    <tr><td><code>v_축가.mp4</code></td><td>축가 영상</td></tr>
+                    <tr><td><code>v_행진.mp4</code></td><td>행진 영상</td></tr>
+                </tbody>
+            </table>
+
+            <div class="warn-box">⚠️ <strong>영상 용량 주의!</strong> GitHub은 파일당 <strong>25MB 이하</strong>만 업로드 가능합니다. 영상이 크면 압축하거나 화질을 낮춰주세요. (5MB 이하 추천)</div>
+
+            <div class="info-box">💡 식순 영상이 필요 없다면 <code>index.html</code>에서 <code>&lt;!-- 식순 영상 --&gt;</code> 부분을 통째로 삭제하면 됩니다.</div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="step" id="step6">
+            <div class="step-number">6</div>
+            <h2>GitHub에 올리기</h2>
+            <ol>
+                <li><a href="https://github.com/new" target="_blank">github.com/new</a>에서 새 레포지토리를 만듭니다.</li>
+                <li><strong>Repository name</strong>에 <code>wedding-thanks</code>를 입력합니다.</li>
+                <li><strong>Public</strong>을 선택합니다. (무료 배포를 위해 필수!)</li>
+                <li><strong>Create repository</strong> 버튼을 클릭합니다.</li>
+                <li>생성된 페이지에서 <strong>"uploading an existing file"</strong> 링크를 클릭합니다.</li>
+                <li>다운받은 파일들을 <strong>모두 드래그 앤 드롭</strong>합니다.</li>
+            </ol>
+            <div class="warn-box">⚠️ <code>images</code> 폴더째로 드래그하세요! 파일을 하나씩 넣으면 폴더 구조가 깨집니다.</div>
+            <div class="info-box">💡 업로드 후 하단의 <strong>Commit changes</strong> 버튼을 꼭 클릭하세요!</div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="step" id="step7">
+            <div class="step-number">7</div>
+            <h2>웹페이지 배포하기 (GitHub Pages)</h2>
+            <ol>
+                <li>레포지토리 페이지에서 상단 <strong>Settings</strong> 탭을 클릭합니다.</li>
+                <li>왼쪽 메뉴에서 <strong>Pages</strong>를 클릭합니다.</li>
+                <li><strong>Source</strong> 항목에서 <strong>Deploy from a branch</strong>를 선택합니다.</li>
+                <li><strong>Branch</strong>를 <strong>main</strong>으로 선택하고 <strong>Save</strong>를 클릭합니다.</li>
+                <li>1~2분 후 상단에 <strong>초록색 링크</strong>가 나타납니다!</li>
+            </ol>
+            <div class="success-box">✅ 링크 형식: <code>https://사용자이름.github.io/wedding-thanks/</code></div>
+        </div>
+
+        <!-- Step 8 -->
+        <div class="step" id="step8">
+            <div class="step-number">8</div>
+            <h2>완성! 링크 공유하기</h2>
+            <p>이제 완성된 링크를 카카오톡, 문자로 공유하면 됩니다! 🎉</p>
+
+            <h3>두 가지 페이지</h3>
+            <table>
+                <thead><tr><th>페이지</th><th>링크</th><th>용도</th></tr></thead>
+                <tbody>
+                    <tr><td>신랑신부용</td><td><code>/wedding-thanks/</code></td><td>하객들에게 보내는 감사 인사</td></tr>
+                    <tr><td>부모님용</td><td><code>/wedding-thanks/parents.html</code></td><td>혼주 지인분들에게 보내는 감사 인사</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">💡 카카오톡에서 링크를 보내면 제목과 설명이 자동으로 표시됩니다. (OG 태그 설정됨)</div>
+        </div>
+
+        <!-- Step 9 -->
+        <div class="step" id="step9">
+            <div class="step-number">9</div>
+            <h2>부모님용 페이지 수정하기</h2>
+            <p><code>parents.html</code>은 혼주분들이 직접 보내시는 감사 인사 페이지입니다.</p>
+            <p><code>index.html</code>과 동일한 방식으로 이름과 인사말을 수정하면 됩니다.</p>
+
+            <h3>부모님용 인사말 예시</h3>
+            <pre><span class="string">저희 자녀의 결혼식에</span>
+<span class="string">마음을 써주시고</span>
+<span class="string">축하해주셔서 깊이 감사드립니다.</span>
+
+<span class="string">직접 자리에 함께하지 못하셨지만</span>
+<span class="string">보내주신 마음 하나하나</span>
+<span class="string">소중히 간직하겠습니다.</span></pre>
+
+            <div class="info-box">💡 부모님용 페이지는 사진과 영상을 <code>index.html</code>과 공유합니다. 따로 넣을 필요 없어요!</div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="step" id="faq">
+            <div class="step-number">?</div>
+            <h2>자주 묻는 질문</h2>
+
+            <div class="faq-item">
+                <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">사진을 16장보다 적게/많이 넣고 싶어요</button>
+                <div class="faq-a">
+                    <p><code>index.html</code>에서 갤러리 부분을 찾아 <code>&lt;div class="gallery-item"&gt;...&lt;/div&gt;</code> 줄을 추가하거나 삭제하세요. 4의 배수로 맞추면 깔끔합니다. 파일 이름은 <code>g17.jpg</code>, <code>g18.jpg</code> 처럼 순번을 이어가면 됩니다.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">식순 영상 항목을 줄이거나 바꾸고 싶어요</button>
+                <div class="faq-a">
+                    <p><code>index.html</code>에서 <code>&lt;details class="ceremony-item"&gt;</code> 블록을 삭제하거나, <code>&lt;summary&gt;</code> 안의 텍스트와 <code>&lt;source src="..."&gt;</code>의 파일 이름을 수정하세요.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">수정 후 반영이 안 돼요</button>
+                <div class="faq-a">
+                    <p>GitHub Pages 반영에 1~2분 정도 걸립니다. 또한 브라우저 캐시 때문에 안 보일 수 있으니, 시크릿 모드나 강력 새로고침(Ctrl+Shift+R)을 시도해보세요.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">영상 용량이 25MB를 넘어요</button>
+                <div class="faq-a">
+                    <p>온라인 무료 영상 압축 사이트(예: <a href="https://www.freeconvert.com/video-compressor" target="_blank">FreeConvert</a>)를 사용하거나, 핸드폰에서 영상을 다시 내보낼 때 해상도를 낮추면 됩니다. 5MB 이하를 추천합니다.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">비용이 정말 안 드나요?</button>
+                <div class="faq-a">
+                    <p>네! GitHub Pages는 완전 무료입니다. 도메인도 <code>사용자이름.github.io</code> 형태로 무료 제공됩니다. 기간 제한도 없습니다.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">나중에 페이지를 삭제하고 싶어요</button>
+                <div class="faq-a">
+                    <p>GitHub에서 해당 레포지토리를 삭제하면 페이지도 함께 사라집니다. Settings → Danger Zone → Delete this repository</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>만든 사람: 하망이 💌</p>
+            <p>도움이 되셨다면 주변에 공유해주세요!</p>
+        </div>
+    </div>
+
+    <script>
+        // 스크롤 애니메이션
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.step').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
