@@ -30,7 +30,7 @@
         <div class="toc">
             <h2>✨ 완성하면 이런 페이지가 만들어져요!</h2>
             <div class="video-container preview-video">
-                <video controls muted playsinline preload="none">
+                <video controls muted playsinline preload="none" poster="posters/preview.jpg">
                     <source src="preview.mov" type="video/mp4">
                     브라우저가 동영상을 지원하지 않습니다.
                 </video>
@@ -59,7 +59,7 @@
                 <li><a href="#step6">GitHub에 올리기</a></li>
                 <li><a href="#step7">웹페이지 배포하기</a></li>
                 <li><a href="#step8">완성! 링크 공유하기</a></li>
-                <li><a href="#step9">부모님용 페이지 수정하기</a></li>
+                <li><a href="#step9">이후 수정 방법</a></li>
                 <li><a href="#faq">자주 묻는 질문</a></li>
             </ol>
         </div>
@@ -86,7 +86,7 @@
 
             <h3>동영상으로 보기</h3>
             <div class="video-container">
-                <video controls muted playsinline preload="none">
+                <video controls muted playsinline preload="none" poster="posters/github-signup.jpg">
                     <source src="github-signup.mov" type="video/mp4">
                     브라우저가 동영상을 지원하지 않습니다.
                 </video>
@@ -107,7 +107,7 @@
 
             <h3>동영상으로 보기</h3>
             <div class="video-container">
-                <video controls muted playsinline preload="none">
+                <video controls muted playsinline preload="none" poster="posters/download-template.jpg">
                     <source src="download-template.mov" type="video/mp4">
                     브라우저가 동영상을 지원하지 않습니다.
                 </video>
@@ -146,7 +146,7 @@
                 <summary>🎬 사진 수 줄이는 방법 — 동영상으로 보기</summary>
                 <div class="fold-content">
                     <div class="video-container">
-                        <video controls muted playsinline preload="none">
+                        <video controls muted playsinline preload="none" poster="posters/deletephoto.jpg">
                             <source src="deletephoto.mov" type="video/mp4">
                             브라우저가 동영상을 지원하지 않습니다.
                         </video>
@@ -183,7 +183,7 @@
                         <li>파일을 다시 열면 코드가 보입니다</li>
                     </ol>
                     <div class="video-container">
-                        <video controls muted playsinline preload="none">
+                        <video controls muted playsinline preload="none" poster="posters/changetextedit.jpg">
                             <source src="changetextedit.mov" type="video/mp4">
                             브라우저가 동영상을 지원하지 않습니다.
                         </video>
@@ -226,7 +226,7 @@
             <h3>수정 예시 — 동영상으로 보기</h3>
             <p>실제로 <code>index.html</code>을 열어 글자를 바꾸는 과정입니다.</p>
             <div class="video-container">
-                <video controls muted playsinline preload="none">
+                <video controls muted playsinline preload="none" poster="posters/editindexhtml.jpg">
                     <source src="editindexhtml.mov" type="video/mp4">
                     브라우저가 동영상을 지원하지 않습니다.
                 </video>
@@ -270,7 +270,7 @@
                 <summary>🎬 식순 영상 제거 및 전체 제거 — 동영상으로 보기</summary>
                 <div class="fold-content">
                     <div class="video-container">
-                        <video controls muted playsinline preload="none">
+                        <video controls muted playsinline preload="none" poster="posters/deletevideo.jpg">
                             <source src="deletevideo.mov" type="video/mp4">
                             브라우저가 동영상을 지원하지 않습니다.
                         </video>
@@ -299,7 +299,7 @@
             </div>
             <h4>동영상으로 보기</h4>
             <div class="video-container">
-                <video controls muted playsinline preload="none">
+                <video controls muted playsinline preload="none" poster="posters/create-repo.jpg">
                     <source src="create-repo.mov" type="video/mp4">
                     브라우저가 동영상을 지원하지 않습니다.
                 </video>
@@ -329,7 +329,7 @@
             </div>
             <h4>동영상으로 보기</h4>
             <div class="video-container">
-                <video controls muted playsinline preload="none">
+                <video controls muted playsinline preload="none" poster="posters/uploadfiles.jpg">
                     <source src="uploadfiles.mov" type="video/mp4">
                     브라우저가 동영상을 지원하지 않습니다.
                 </video>
@@ -355,7 +355,7 @@
 
             <h3>동영상으로 보기</h3>
             <div class="video-container">
-                <video controls muted playsinline preload="none">
+                <video controls muted playsinline preload="none" poster="posters/github-pages-setup.jpg">
                     <source src="github-pages-setup.mov" type="video/mp4">
                     브라우저가 동영상을 지원하지 않습니다.
                 </video>
@@ -397,11 +397,28 @@
         <!-- Step 9 -->
         <div class="step" id="step9">
             <div class="step-number">9</div>
-            <h2>부모님용 페이지 수정하기</h2>
-            <p><code>parents.html</code>은 혼주분들이 직접 보내시는 감사 인사 페이지입니다.</p>
-            <p><code>index.html</code>과 동일한 방식으로 이름과 인사말을 수정하면 됩니다.</p>
+            <h2>이후 수정 방법</h2>
+            <p>배포 후에도 언제든 수정할 수 있습니다. 전부 GitHub 웹에서 가능합니다.</p>
 
-            <h3>부모님용 인사말 예시</h3>
+            <h3>컨텐츠 내용 수정 방법</h3>
+            <p>부모님용 페이지(<code>parents.html</code>) 수정을 예로 들어볼게요. <code>parents.html</code>은 혼주분들이 직접 보내시는 감사 인사 페이지입니다.</p>
+            <ol>
+                <li>GitHub 레포지토리에서 수정할 파일(예: <code>parents.html</code>)을 클릭합니다.</li>
+                <li>오른쪽 위 <strong>연필 아이콘</strong>(Edit)을 클릭합니다.</li>
+                <li>이름과 인사말을 수정합니다.</li>
+                <li>하단의 <strong>Commit changes</strong>를 클릭합니다.</li>
+                <li>약 1~2분 후 반영됩니다.</li>
+            </ol>
+
+            <h4>동영상으로 보기</h4>
+            <div class="video-container">
+                <video controls muted playsinline preload="none" poster="posters/editafterupload.jpg">
+                    <source src="editafterupload.mov" type="video/mp4">
+                    브라우저가 동영상을 지원하지 않습니다.
+                </video>
+            </div>
+
+            <h4>부모님용 인사말 예시</h4>
             <pre><span class="string">저희 자녀의 결혼식에</span>
 <span class="string">마음을 써주시고</span>
 <span class="string">축하해주셔서 깊이 감사드립니다.</span>
@@ -411,6 +428,22 @@
 <span class="string">소중히 간직하겠습니다.</span></pre>
 
             <div class="info-box">💡 부모님용 페이지는 사진과 영상을 <code>index.html</code>과 공유합니다. 따로 넣을 필요 없어요!</div>
+
+            <h3>사진 및 동영상 교체</h3>
+            <ol>
+                <li>교체할 사진·영상의 파일명을 동일하게 맞춥니다. (예: <code>g1.jpg</code>, <code>video1.mp4</code>)</li>
+                <li><code>images</code> 폴더에서 <strong>Add file → Upload files</strong>로 새 파일을 올립니다.</li>
+                <li>같은 이름이면 자동으로 덮어쓰기 됩니다.</li>
+            </ol>
+
+            <h4>동영상으로 보기</h4>
+            <div class="video-container">
+                <video controls muted playsinline preload="none" poster="posters/edit-on-github.jpg">
+                    <source src="edit-on-github.mov" type="video/mp4">
+                    브라우저가 동영상을 지원하지 않습니다.
+                </video>
+            </div>
+            <div class="info-box">💡 영상은 청첩장 템플릿 기준이지만, 감사카드도 교체 방법은 동일합니다.</div>
         </div>
 
         <!-- FAQ -->
