@@ -291,6 +291,12 @@ code {
     width: 100%;
     display: block;
 }
+.video-container.preview-video {
+    max-width: 300px;
+    margin: 16px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
 .success-box {
     background: #e8f5e9;
     border-left: 4px solid #4CAF50;
@@ -337,7 +343,8 @@ th {
 td { color: #555; }
 
 /* Download button */
-.download-btn {
+.download-btn,
+.step a.download-btn {
     display: inline-block;
     padding: 14px 28px;
     background: linear-gradient(135deg, #c48b5c, #d4a574);
@@ -347,6 +354,7 @@ td { color: #555; }
     font-size: 16px;
     font-weight: 600;
     margin: 16px 0;
+    box-shadow: 0 2px 8px rgba(196, 139, 92, 0.35);
     transition: opacity 0.2s;
 }
 .download-btn:hover { opacity: 0.85; }
