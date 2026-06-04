@@ -297,6 +297,33 @@ code {
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
+
+/* 펼치기/접기 (details) */
+.fold-item {
+    border: 1px solid #e8dccf;
+    border-radius: 8px;
+    margin: 16px 0;
+    background: #faf6f1;
+    overflow: hidden;
+}
+.fold-item summary {
+    padding: 14px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    color: #7a4f28;
+    list-style: none;
+}
+.fold-item summary::-webkit-details-marker { display: none; }
+.fold-item summary::after {
+    content: '▾';
+    float: right;
+    transition: transform 0.2s;
+}
+.fold-item[open] summary::after { transform: rotate(180deg); }
+.fold-item .fold-content {
+    padding: 4px 20px 16px;
+}
 .success-box {
     background: #e8f5e9;
     border-left: 4px solid #4CAF50;
